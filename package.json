@@ -53,5 +53,5 @@
   "devDependencies": {
     "web-vitals": "^3.4.0"
   },
-  "proxy": "http://localhost:5000"
+  "proxy": "https://react-capstone-2.azurewebsites.net"
 }

@@ -12,13 +12,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
 
 export default function Households() {
-
   const { currentUser } = useContext(UserContext);
 
   const [isLoading, setIsLoading] = useState(true);
   const [households, setHouseholds] = useState([]);
   const [show, setShow] = useState(false);
   const [formData, setFormData] = useState({
+    userId: currentUser.id,
     name: "",
     address: "",
     city: "",
@@ -32,13 +32,15 @@ export default function Households() {
     setShow(false);  
     getUserHouseholds();
     setFormData({
-    name: "",
-    address: "",
-    city: "",
-    state: "",
-    zip: "",
-    notes: "",
-    errors: []})
+      userId: currentUser.id,
+      name: "",
+      address: "",
+      city: "",
+      state: "",
+      zip: "",
+      notes: "",
+      errors: [],
+    });
   };
   const handleShow = () => setShow(true);
 
@@ -65,9 +67,7 @@ export default function Households() {
     console.log("Household created: " + household.id);
     handleClose();    
   }
-
-  
-  
+    
   useEffect(() => {   
     if(currentUser){
       getUserHouseholds();

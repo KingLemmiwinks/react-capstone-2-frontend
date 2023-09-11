@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
 import Modal from "react-bootstrap/Modal";
 import HouseholdForm from "./HouseholdForm";
+import UserContext from "./UserContext";
 
 export default function HouseholdModal(props) {
+    const { currentUser } = useContext(UserContext);
     const { handleClose, show, createHousehold, setIsLoading, formData, setFormData } = props;
     
 
@@ -18,6 +20,7 @@ export default function HouseholdModal(props) {
       e.preventDefault();
       setIsLoading(true);
       let data = {
+        userId: currentUser.id,
         name: formData.name,
         address: formData.address,
         city: formData.city,

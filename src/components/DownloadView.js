@@ -299,7 +299,7 @@ export default function DownloadView() {
             </div>
             <div className="row">
               <label className="col-6">Explain any "yes" answers in Associations section: </label>
-              <span className="col">{household?.notes}</span>
+              <span className="col">{associations?.notes}</span>
             </div>
           </div>
           <br />

@@ -82,7 +82,7 @@ export default function Basement(props) {
       id: basement.id,
       householdId: householdId ?? null,
       hasSumpPump: basement.hasSumpPump ?? false,
-      pumpCount: basement.pumpCount ?? 1,
+      pumpCount: basement.pumpCount ?? 0,
       hasBeenUsed: basement.hasBeenUsed ?? false,
       hasWaterDamage: basement.hasWaterDamage ?? false,
       hasRepairs: basement.hasRepairs ?? false,

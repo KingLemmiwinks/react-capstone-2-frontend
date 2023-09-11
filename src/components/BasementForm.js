@@ -33,10 +33,10 @@ export default function BasementForm(props) {
         <Form.Control
           as="select"
           onChange={changeHandler}
-          value={formData.sellerOccupancyHistory}
-          name="sellerOccupancyHistory"
+          value={formData.pumpCount}
+          name="pumpCount"
         >
-          <option>Number of Sump Pumps</option>
+          <option value="0">No Sump Pumps</option>
           <option value="1">1</option>
           <option value="2">2</option>
           <option value="3">3</option>

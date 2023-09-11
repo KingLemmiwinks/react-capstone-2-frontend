@@ -259,7 +259,7 @@ export default function DownloadView() {
             </div>
             <div className="row">
               <label className="col-6">
-                Explain any "yes" answers in Seller's Expertise section:{" "}
+                Explain any "yes" answers in Ownership/Occupancy section:{" "}
               </label>
               <span className="col">{ownershipOccupancy?.notes}</span>
             </div>
@@ -298,7 +298,7 @@ export default function DownloadView() {
               <span className="col">{associations?.communityMaintenance}</span>
             </div>
             <div className="row">
-              <label className="col-6">Explain this section if needed: </label>
+              <label className="col-6">Explain any "yes" answers in Associations section: </label>
               <span className="col">{household?.notes}</span>
             </div>
           </div>
@@ -352,7 +352,7 @@ export default function DownloadView() {
               </span>
             </div>
             <div className="row">
-              <label className="col-6">Explain this section if needed: </label>
+              <label className="col-6">Explain any "yes" answers in Roof secion: </label>
               <span className="col">{roof?.notes}</span>
             </div>
           </div>
@@ -406,7 +406,7 @@ export default function DownloadView() {
               <span className="col">{basement?.hasRepairs ? "Yes" : "No"}</span>
             </div>
             <div className="row">
-              <label className="col-6">Explain this section if needed: </label>
+              <label className="col-6">Explain any "yes" answers in Basement section: </label>
               <span className="col">{basement?.notes}</span>
             </div>
           </div>

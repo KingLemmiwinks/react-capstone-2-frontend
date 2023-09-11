@@ -20,7 +20,7 @@ export default function AssociationsForm(props) {
           value={formData.associationTypeID}
           name="associationTypeID"
         >
-          <option>Select Association</option>
+          <option value="4">N/A</option>
           <option value="1">Condominium</option>
           <option value="2">Homeowners Association or Planned Community</option>
           <option value="3">Cooperative</option>
@@ -46,7 +46,7 @@ export default function AssociationsForm(props) {
           value={formData?.frequencyTypeID}
           name="frequencyTypeID"
         >
-          <option>Select Role</option>
+          <option value="4">N/A</option>
           <option value="1">Monthly</option>
           <option value="2">Quarterly</option>
           <option value="3">Yearly</option>

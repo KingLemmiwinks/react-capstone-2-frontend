@@ -1,7 +1,6 @@
 import axios from "axios";
-//const BASE_URL = process.env.BASE_URL || "/api";
-const BASE_URL = "https://react-capstone-2.azurewebsites.net/api";
-
+// const BASE_URL = process.env.BASE_URL || "/api"; // LOCAL
+const BASE_URL = "https://react-capstone-2.azurewebsites.net/api"; // DEV
 
 
 export default class CapstoneApi {

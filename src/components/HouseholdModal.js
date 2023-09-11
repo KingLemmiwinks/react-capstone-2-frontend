@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import Modal from "react-bootstrap/Modal";
 import HouseholdForm from "./HouseholdForm";
-import UserContext from "./UserContext";
+import UserContext from "../UserContext";
 
 export default function HouseholdModal(props) {
     const { currentUser } = useContext(UserContext);
